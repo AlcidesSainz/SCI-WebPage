@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCI Asesores Academicos</title>
+    <link rel="icon" type="image/png" href="assets/logo/sci_logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg fs-5">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio"><img class="img-fluid logo" src="assets/logo/sci_logo.png"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acerca">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Sección de presentación  -->
+    <section id="inicio" class="py-5 text-center d-flex justify-content-center align-items-center">
+        <div class="container">
+            <h2 class="display-5 fw-bold">¿Necesitas ayuda con tus trabajos académicos?</h2>
+            <p class="lead">Ofrecemos asesoría profesional para que puedas destacar en tus estudios.</p>
+            <a href="https://wa.me/+5930978658224" target="_blank" class="btn btn-outline-light">Contáctanos <i
+                    class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <!-- Sección de servicios -->
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 py-5 mt-3">
+                    <h2 class="fw-bold ms-md-5">
+                        Nuestro enfoque principal es ayudar a los estudiantes.
+                    </h2>
+                    <p class="ms-md-5">
+                        Nos hacemos responsables de las correcciones, te garantizamos un trabajo libre plagio y te
+                        brindamos acompañamiento
+                        hasta que recibas tu nota final.
+                    </p>
+                    <a href="#" class="btn btn-outline-dark ms-md-5">
+                        Conoce más <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid rounded" style="width: 80%;" src="assets/images/graduate_pic.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Desarrollo del trabajo -->
+    <section id="desarrollo" class="py-5 bg-light">
+        <div class="container container-desarrollo">
+            <h2 class="text-center mb-4">¿Cómo hacemos tu trabajo académico?</h2>
+            <!-- Carrusel de pasos -->
+            <div id="pasosCarousel" class="carousel slide" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <!-- Paso 1 y 2 -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <!-- Izquierda -->
+                            <div class="col-md-6">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 text-start">
+                                        <span class="display-1 fw-bold span-color">01</span>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h3 class="mb-3">Recepción de requisitos</h3>
+                                        <p class="lead">Recibimos las especificaciones de tu trabajo y fecha de entrega.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Derecha -->
+                            <div class="col-md-6">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 text-end">
+                                        <span class="display-1 fw-bold span-color">02</span>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h3 class="mb-3">Asignación de profesional</h3>
+                                        <p class="lead">Te asignamos a un profesional de tu área de estudio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paso 3 y 4 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <!-- Izquierda -->
+                            <div class="col-md-6">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 text-start">
+                                        <span class="display-1 fw-bold span-color">03</span>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h3 class="mb-3">Realización del trabajo</h3>
+                                        <p class="lead">El profesional asignado comienza a desarrollar el trabajo</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Derecha -->
+                            <div class="col-md-6">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 text-end">
+                                        <span class="display-1 fw-bold span-color">04</span>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h3 class="mb-3">Detector de plagio</h3>
+                                        <p class="lead">El trabajo finalizado se pasa por un detector de plagio para
+                                            confirmar la originalidad del mismo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paso 5 y boton -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <!-- Izquierda -->
+                            <div class="col-md-6">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 text-start">
+                                        <span class="display-1 fw-bold span-color">05</span>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h3 class="mb-3">Entrega final</h3>
+                                        <p class="lead">En la fecha previamente pactada por el cliente se hace entrega
+                                            del trabajo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Derecha -->
+                            <div class="col-md-6">
+                                <div class="row align-items-center h-100">
+                                    <div class="col-12 d-flex justify-content-center align-items-center h-100">
+                                        <a href="https://wa.me/+5930978658224" target="_blank"
+                                            class="btn btn-lg rounded px-5 py-3  whatsapp-btn">
+                                            <span class="h4 mb-0 me-2">Contáctanos</span>
+                                            <i class="fa-brands fa-whatsapp fa-2x"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#pasosCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon  rounded-circle p-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#pasosCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon rounded-circle p-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opiniones de clientes -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">¿Qué opinan nuestros clientes?</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 spaced mx-auto">
+                <div class="col ">
+                    <img src="assets/images/opinion1.png" alt="Opinión 1" style="width: 73%" class="img-fluid rounded ">
+                </div>
+                <div class="col">
+                    <img src="assets/images/opinion2.png" alt="Opinión 2" style="width: 75%;"
+                        class="img-fluid rounded ">
+                </div>
+                <div class="col">
+                    <img src="assets/images/opinion3.png" alt="Opinión 3" style="width: 75%;"
+                        class="img-fluid rounded ">
+                </div>
+                <!-- Si tienes más capturas, sigue agregando .col -->
+            </div>
+        </div>
+    </section>
+    <!-- Redes sociales -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold" style="font-size: 1.7rem;">
+                Síguenos en nuestras redes sociales
+            </h2>
+            <div class="d-flex justify-content-center gap-4">
+                <!-- Facebook -->
+                <a href="#" class="social-circle d-flex align-items-center justify-content-center"
+                    style="--icon-color: #4267B2;" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="#" class="social-circle d-flex align-items-center justify-content-center"
+                    style="--icon-color: #E1306C;" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="#" class="social-circle d-flex align-items-center justify-content-center"
+                    style="--icon-color: #25D366;" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Pie de página -->
+    <footer class="py-3 mt-4">
+        <div class="container text-center">
+            <p class="m-0">© 2025 Asesoría Académica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Sección de contacto
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
