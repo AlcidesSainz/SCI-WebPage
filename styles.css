@@ -14,7 +14,7 @@ nav {
 }
 
 .logo {
-    width: 15%;
+    width: 12%;
 }
 
 #inicio {
@@ -24,6 +24,15 @@ nav {
     color: white;
     min-height: 90vh;
 
+}
+
+.card-servicio {
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.card-servicio:hover {
+    transform: scale(1.05);
 }
 
 .list-text {
@@ -52,6 +61,14 @@ nav {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+.btn-contacto:hover {
+    background-color: #f77261 !important;
+    border-color: #f77261 !important;
+    color: white !important;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
 .social-circle i {
     color: var(--icon-color, #333);
     transition: color 0.3s ease;
@@ -61,8 +78,7 @@ nav {
     color: #ffffff;
 }
 
-/* Para un efecto de “cambio de color de fondo” en hover, 
-   podrías usar un pseudo-elemento: */
+
 .social-circle:hover {
     background-color: var(--icon-color, #333);
 }
@@ -74,26 +90,29 @@ footer {
 
 .container-desarrollo {
     min-height: 30vh;
-    max-height: 30vh;
 }
 
 .span-color {
     color: #b4a8d0;
 }
 
+.carousel-item {
+    min-height: 25vh;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
-    width: auto;
-    opacity: 1;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1000;
+    bottom: auto;
+    width: auto;
+    height: auto;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-size: 1.0rem;
+    background-size: 1.5rem;
     filter: invert(1);
 }
 
@@ -108,9 +127,9 @@ footer {
 }
 
 .whatsapp-btn:hover {
-    border: solid 2px #b4a8d0 !important;
-    background: #b4a8d0 !important;
-    color: #333 !important;
+    border: solid 2px #f77261 !important;
+    background: #f77261 !important;
+    color: white !important;
 }
 
 /* Para móviles */
@@ -120,13 +139,7 @@ footer {
         width: 100%;
         justify-content: center;
     }
-
-    #pasosCarousel {
-        height: auto !important;
-        min-height: 400px;
-    }
 }
-
 
 @media (min-width: 768px) {
     .carousel-item .text-end {
@@ -145,4 +158,64 @@ footer {
     .carousel-item .col-md-6:not(:last-child) {
         border-right: 2px solid #b4a8d0;
     }
+}
+
+
+.stats-banner {
+    background: url('assets/images/experiencia_pic.jpg') center / cover no-repeat;
+    filter: grayscale(30%);
+    color: #333;
+    min-height: 30vh;
+}
+
+.stats-banner h2 {
+    color: antiquewhite;
+}
+
+.stats-banner p {
+    color: antiquewhite;
+    font-size: 1.2rem;
+}
+
+.stats-banner .overlay {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(151, 108, 201, 0.634);
+    z-index: 1;
+}
+
+.stats-banner .container {
+    position: relative;
+    /* para estar por encima del overlay */
+    z-index: 2;
+}
+
+.btn-primary {
+    background-color: #f77261 !important;
+    border-color: #f77261 !important;
+    /* Ajusta el color de texto si lo deseas */
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background-color: #f84f39 !important;
+    /* un tono más oscuro, por ejemplo */
+    border-color: #f84f39 !important;
+}
+
+.text-primary {
+    color: #f77261 !important;
+}
+
+.footer-icon {
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin: 0.2rem;
+}
+
+.footer-icon:hover {
+    color: #f77261;
+    transform: translateY(-2px);
 }
