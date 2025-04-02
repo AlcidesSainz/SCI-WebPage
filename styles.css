@@ -26,8 +26,11 @@ nav {
 
 }
 
+.border-custom {
+    border-color: #b4a8d0 !important;
+}
+
 .card-servicio {
-    border-radius: 10px;
     transition: all 0.5s ease;
 }
 
@@ -218,4 +221,76 @@ footer {
 .footer-icon:hover {
     color: #f77261;
     transform: translateY(-2px);
+}
+
+.flip-card {
+    width: 100%;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front i {
+    color: #b4a8d0;
+}
+
+.flip-card-back p {
+    color: #a18bd5;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #b4a8d0;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 1000;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.back-to-top:hover {
+    opacity: 0.8;
 }
