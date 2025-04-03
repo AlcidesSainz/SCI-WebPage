@@ -16,9 +16,16 @@
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg fs-5">
         <div class="container">
+            <!-- Logo -->
             <a class="navbar-brand" href="#inicio"><img class="img-fluid logo" src="assets/logo/sci_logo.png"></a>
+            <!-- Botón toggler para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Enlaces de navegación -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#servicios">Servicios</a>
                     </li>
@@ -32,7 +39,7 @@
 
 
     <!-- Sección de presentación  -->
-    <section id="inicio" class="py-5 text-center d-flex justify-content-center align-items-center">
+    <section id="inicio" class="text-center d-flex justify-content-center align-items-center">
         <div class="container">
             <h2 class="display-5 fw-bold">¿Necesitas ayuda con tus trabajos académicos?</h2>
             <p class="lead">Ofrecemos asesoría profesional para que puedas destacar en tus estudios.</p>
@@ -41,11 +48,12 @@
         </div>
     </section>
 
-    <!-- Sección de servicios -->
+    <!-- Sección Enfoque -->
     <section class="py-5 bg-light">
         <div class="container ">
-            <div class="row">
-                <div class="col-md-6 py-5 mt-3">
+            <div class="row align-items-center">
+                <!-- Izquierda -->
+                <div class="col-md-6 mt-3">
                     <h2 class="fw-bold ms-md-5">
                         Nuestro enfoque principal es ayudar a los estudiantes.
                     </h2>
@@ -59,8 +67,9 @@
                         Contáctanos <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
-                <div class="col-md-6">
-                    <img class="img-fluid rounded" style="width: 80%;" src="assets/images/graduate_pic.jpg" alt="">
+                <!-- Derecha -->
+                <div class="col-md-6 text-center">
+                    <img class="img-fluid rounded" style="width: 80%;" src="assets/images/graduate_pic.jpg">
                 </div>
             </div>
         </div>
@@ -70,14 +79,14 @@
     <section id="servicios" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold">¿Qué servicios ofrecemos?</h2>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
                 <!-- Card 1 -->
                 <div class="col card-servicio ">
                     <div class="p-4 shadow rounded border border-1 border-custom  bg-white h-100">
                         <div class="mb-3 text-center">
-                            <img src="assets/images/servicios_pic5.png" style="width: 80px;">
+                            <img src="assets/images/servicios_pic5.png" style="width: 30%;">
                         </div>
-                        <h5 class="text-center" style="font-size: 25px;">Trabajos académicos</h5>
+                        <h5 class="text-center fs-4">Trabajos académicos</h5>
                     </div>
                 </div>
 
@@ -85,9 +94,9 @@
                 <div class="col card-servicio">
                     <div class="p-4 shadow rounded border border-1 border-custom  bg-white h-100">
                         <div class="mb-3 text-center">
-                            <img src="assets/images/servicio_pic2.png" style="width: 80px;">
+                            <img src="assets/images/servicio_pic2.png" style="width: 30%;">
                         </div>
-                        <h5 class="text-center" style="font-size: 25px;">Corrección de estilo</h5>
+                        <h5 class="text-center fs-4">Corrección de estilo</h5>
                     </div>
                 </div>
 
@@ -95,9 +104,9 @@
                 <div class="col card-servicio">
                     <div class="p-4 shadow rounded border border-1 border-custom  bg-white h-100">
                         <div class="mb-3 text-center">
-                            <img src="assets/images/servicios_pic6.png" style="width: 80px;">
+                            <img src="assets/images/servicios_pic6.png" style="width: 30%;">
                         </div>
-                        <h5 class="text-center" style="font-size: 25px;">Formato y normas APA</h5>
+                        <h5 class="text-center fs-4">Formato y normas APA</h5>
                     </div>
                 </div>
 
@@ -105,9 +114,9 @@
                 <div class="col card-servicio">
                     <div class="p-4 shadow rounded border border-1 border-custom bg-white h-100">
                         <div class="mb-3 text-center">
-                            <img src="assets/images/servicios_pic4.png" style="width: 80px;">
+                            <img src="assets/images/servicios_pic4.png" style="width: 30%;">
                         </div>
-                        <h5 class="text-center" style="font-size: 25px;">Asesoría especializada </h5>
+                        <h5 class="text-center fs-4">Asesoría especializada </h5>
                     </div>
                 </div>
             </div>
@@ -120,7 +129,6 @@
     <section id="desarrollo" class="py-5 bg-light">
         <div class="container container-desarrollo">
             <h2 class="text-center mb-5">¿Cómo hacemos tu trabajo académico?</h2>
-            <!-- Carrusel de pasos -->
             <div id="pasosCarousel" class="carousel slide" data-bs-interval="false">
                 <div class="carousel-inner">
                     <!-- Paso 1 y 2 -->
@@ -143,7 +151,7 @@
                             <!-- Derecha -->
                             <div class="col-md-6">
                                 <div class="row align-items-center">
-                                    <div class="col-md-3 text-end">
+                                    <div class="col-md-3 text-start">
                                         <span class="display-1 fw-bold span-color">02</span>
                                     </div>
                                     <div class="col-md-9">
@@ -174,7 +182,7 @@
                             <!-- Derecha -->
                             <div class="col-md-6">
                                 <div class="row align-items-center">
-                                    <div class="col-md-3 text-end">
+                                    <div class="col-md-3 text-start">
                                         <span class="display-1 fw-bold span-color">04</span>
                                     </div>
                                     <div class="col-md-9">
@@ -238,11 +246,9 @@
     </section>
 
     <!-- Sección Experiencia -->
-    <section class="stats-banner py-5 position-relative">
-        <!-- Capa de superposición (overlay) si deseas un efecto semitransparente -->
+    <section class="stats-banner py-5 position-relative text-center">
         <div class="overlay"></div>
-
-        <div class="container text-center">
+        <div class="container">
             <div class="row">
                 <!-- Columna 1 -->
                 <div class="col-md-4 mb-4 mb-md-0">
@@ -255,7 +261,7 @@
                     <p class="mb-0">Tesis exitosas y clientes satisfechos</p>
                 </div>
                 <!-- Columna 3 -->
-                <div class="col-md-4 mb-4 mb-md-0">
+                <div class="col-md-4">
                     <h2 class="display-4 fw-bold">+200</h2>
                     <p class="mb-0">Plagios evitados</p>
                 </div>
@@ -267,21 +273,17 @@
         <div class="container">
             <h2 class="mb-5 text-center fw-bold">Especialidades</h2>
             <div class="row g-4 justify-content-center">
-
                 <!-- Flip Card: Ingeniería -->
-                <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="col-sm-6 col-md-3 col-lg-2 col-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <!-- Anverso -->
-                            <div
-                                class="flip-card-front d-flex flex-column justify-content-center align-items-center p-3">
-                                <!-- Ícono para Ingeniería -->
+                            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
                                 <i class="fa-solid fa-gears fa-3x mb-2"></i>
                                 <h5 class="">Ingeniería</h5>
                             </div>
                             <!-- Reverso -->
-                            <div
-                                class="flip-card-back d-flex flex-column justify-content-center align-items-center p-3">
+                            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
                                 <p class="mb-0 text-center">
                                     Proyectos en civil, mecánica, eléctrica, sistemas, química, y más.
                                 </p>
@@ -289,21 +291,17 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Flip Card: Derecho -->
-                <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="col-sm-6 col-md-3 col-lg-2 col-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <!-- Anverso -->
-                            <div
-                                class="flip-card-front d-flex flex-column justify-content-center align-items-center p-3">
-                                <!-- Ícono para Derecho -->
+                            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
                                 <i class="fa-solid fa-scale-balanced fa-3x mb-2"></i>
                                 <h5 class="">Derecho</h5>
                             </div>
                             <!-- Reverso -->
-                            <div
-                                class="flip-card-back d-flex flex-column justify-content-center align-items-center p-3">
+                            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
                                 <p class="mb-0 text-center">
                                     Ensayos, análisis de jurisprudencia, proyectos legales y asesorías en derecho.
                                 </p>
@@ -313,19 +311,16 @@
                 </div>
 
                 <!-- Flip Card: Medicina -->
-                <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="col-sm-6 col-md-3 col-lg-2 col-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <!-- Anverso -->
-                            <div
-                                class="flip-card-front d-flex flex-column justify-content-center align-items-center p-3">
-                                <!-- Ícono para Medicina -->
+                            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
                                 <i class="fa-solid fa-stethoscope fa-3x mb-2"></i>
                                 <h5 class="">Medicina</h5>
                             </div>
                             <!-- Reverso -->
-                            <div
-                                class="flip-card-back d-flex flex-column justify-content-center align-items-center p-3">
+                            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
                                 <p class="mb-0 text-center">
                                     Artículos científicos, casos clínicos, revisiones bibliográficas y más.
                                 </p>
@@ -335,19 +330,16 @@
                 </div>
 
                 <!-- Flip Card: Administración de Empresas -->
-                <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="col-sm-6 col-md-3 col-lg-2 col-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <!-- Anverso -->
-                            <div
-                                class="flip-card-front d-flex flex-column justify-content-center align-items-center p-3">
-                                <!-- Ícono -->
+                            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
                                 <i class="fa-solid fa-briefcase fa-3x mb-2"></i>
                                 <h5 class="text-center">Administración de Empresas</h5>
                             </div>
                             <!-- Reverso -->
-                            <div
-                                class="flip-card-back d-flex flex-column justify-content-center align-items-center p-3">
+                            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center ">
                                 <p class="mb-0 text-center">
                                     Planes de negocio, análisis de mercado, gestión de proyectos, entre otros.
                                 </p>
@@ -357,17 +349,14 @@
                 </div>
 
                 <!-- Flip Card: Contabilidad -->
-                <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="col-sm-6 col-md-3 col-lg-2 col-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div
-                                class="flip-card-front d-flex flex-column justify-content-center align-items-center p-3">
-                                <!-- Ícono -->
+                            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
                                 <i class="fa-solid fa-calculator fa-3x mb-2"></i>
                                 <h5 class="">Contabilidad</h5>
                             </div>
-                            <div
-                                class="flip-card-back d-flex flex-column justify-content-center align-items-center p-3">
+                            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
                                 <p class="mb-0 text-center">
                                     Estados financieros, contabilidad de costos, auditoría e impuestos.
                                 </p>
@@ -377,17 +366,14 @@
                 </div>
 
                 <!-- Flip Card: Desarrollo de Software -->
-                <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="col-sm-6 col-md-3 col-lg-2 col-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div
-                                class="flip-card-front d-flex flex-column justify-content-center align-items-center p-3">
-                                <!-- Ícono -->
+                            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
                                 <i class="fa-solid fa-code fa-3x mb-2"></i>
                                 <h5 class="text-center">Desarrollo de Software</h5>
                             </div>
-                            <div
-                                class="flip-card-back d-flex flex-column justify-content-center align-items-center p-3">
+                            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
                                 <p class="mb-0 text-center">
                                     Diseño y desarrollo de aplicaciones, algoritmos, pruebas de software y más.
                                 </p>
@@ -397,17 +383,14 @@
                 </div>
 
                 <!-- Flip Card: Educación -->
-                <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="col-sm-6 col-md-3 col-lg-2 col-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div
-                                class="flip-card-front d-flex flex-column justify-content-center align-items-center p-3">
-                                <!-- Ícono -->
+                            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
                                 <i class="fa-solid fa-graduation-cap fa-3x mb-2"></i>
                                 <h5 class="">Educación</h5>
                             </div>
-                            <div
-                                class="flip-card-back d-flex flex-column justify-content-center align-items-center p-3">
+                            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
                                 <p class="mb-0 text-center">
                                     Planes de clase, proyectos pedagógicos, investigación educativa y más.
                                 </p>
@@ -417,17 +400,14 @@
                 </div>
 
                 <!-- Flip Card: Psicología -->
-                <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="col-sm-6 col-md-3 col-lg-2 col-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div
-                                class="flip-card-front d-flex flex-column justify-content-center align-items-center p-3">
-                                <!-- Ícono -->
+                            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
                                 <i class="fa-solid fa-brain fa-3x mb-2"></i>
                                 <h5 class="">Psicología</h5>
                             </div>
-                            <div
-                                class="flip-card-back d-flex flex-column justify-content-center align-items-center p-3">
+                            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
                                 <p class="mb-0 text-center">
                                     Evaluaciones, estudios de casos, investigaciones y más.
                                 </p>
@@ -437,17 +417,14 @@
                 </div>
 
                 <!-- Flip Card: Comunicación Social -->
-                <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="col-sm-6 col-md-4 col-lg-2 col-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div
-                                class="flip-card-front d-flex flex-column justify-content-center align-items-center p-3">
-                                <!-- Ícono -->
+                            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
                                 <i class="fa-solid fa-microphone fa-3x mb-2"></i>
                                 <h5 class="text-center">Comunicación Social</h5>
                             </div>
-                            <div
-                                class="flip-card-back d-flex flex-column justify-content-center align-items-center p-3">
+                            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
                                 <p class="mb-0 text-center">
                                     Campañas de comunicación, análisis de medios, periodismo y más.
                                 </p>
@@ -457,17 +434,14 @@
                 </div>
 
                 <!-- Flip Card: Arquitectura -->
-                <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="col-sm-6 col-md-4 col-lg-2 col-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div
-                                class="flip-card-front d-flex flex-column justify-content-center align-items-center p-3">
-                                <!-- Ícono -->
+                            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
                                 <i class="fa-solid fa-drafting-compass fa-3x mb-2"></i>
                                 <h5 class="">Arquitectura</h5>
                             </div>
-                            <div
-                                class="flip-card-back d-flex flex-column justify-content-center align-items-center p-3">
+                            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
                                 <p class="mb-0 text-center">
                                     Diseño de planos, proyectos arquitectónicos, modelado 3D, entre otros.
                                 </p>
@@ -477,17 +451,14 @@
                 </div>
 
                 <!-- Flip Card: Lengua y Literatura -->
-                <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="col-sm-6 col-md-4 col-lg-2 col-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div
-                                class="flip-card-front d-flex flex-column justify-content-center align-items-center p-3">
-                                <!-- Ícono -->
+                            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
                                 <i class="fa-solid fa-book-open fa-3x mb-2"></i>
                                 <h5 class="text-center">Lengua y Literatura</h5>
                             </div>
-                            <div
-                                class="flip-card-back d-flex flex-column justify-content-center align-items-center p-3">
+                            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
                                 <p class="mb-0 text-center">
                                     Ensayos, análisis literario, corrección de estilo y redacción creativa.
                                 </p>
@@ -590,27 +561,38 @@
     </section>
     <!-- Pie de página -->
     <footer class="py-3 mt-4">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div>
-                <a class="navbar-brand" href="#inicio"><img class="img-fluid" style="width: 50px;"
-                        src="assets/logo/sci_logo.png"></a>
-            </div>
-            <div class="">
-                <span class="fs-5">Copyrights © 2025 Todos los derechos reservados - SCI Asesores Académicos</span>
-            </div>
-            <div class="">
-                <a href="https://wa.me/+5930978658224" target="_blank" class="footer-icon mt-2">
-                    <i class="fa-brands fa-whatsapp fa-2x"></i>
-                </a>
-                <a href="https://www.facebook.com/SCIasesoriacademica" target="_blank" class="footer-icon">
-                    <i class="fa-brands fa-facebook fa-2x"></i>
-                </a>
-                <a href="https://www.instagram.com/sci.asesoresacademicosec/" target="_blank" class="footer-icon">
-                    <i class="fa-brands fa-instagram fa-2x"></i>
-                </a>
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Columna Izquierda (Logo) -->
+                <div class="col-12 col-md-4 text-md-start text-center mb-3 mb-md-0">
+                    <a class="navbar-brand" href="#inicio">
+                        <img class="img-fluid" src="assets/logo/sci_logo.png" alt="logo" style="width: 10%;">
+                    </a>
+                </div>
+
+                <!-- Columna Central (Copyright) -->
+                <div class="col-12 col-md-4 text-center mb-3 mb-md-0 fs-5">
+                    <span>
+                        © 2025 - SCI Asesores Académicos
+                    </span>
+                </div>
+
+                <!-- Columna Derecha (Enlaces / Iconos) -->
+                <div class="col-12 col-md-4 text-md-end text-center">
+                    <a href="https://wa.me/+5930978658224" target="_blank" class="footer-icon mt-2 me-2">
+                        <i class="fa-brands fa-whatsapp fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com/SCIasesoriacademica" target="_blank" class="footer-icon me-2">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sci.asesoresacademicosec/" target="_blank" class="footer-icon">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
+
 
     <!-- Botón "Back to Top" -->
     <button id="btnScrollTop" class="back-to-top">
@@ -619,7 +601,6 @@
 
 
     <script src="script.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
